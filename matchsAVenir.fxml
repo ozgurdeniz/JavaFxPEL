@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TableView?>
+<BorderPane fx:id="matchsAVenirRoot" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MatchsAVenir">
+   <top>
+      <Label prefHeight="41.0" prefWidth="244.0" text="Matchs A Venir" textFill="#7b15da" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <ListView fx:id="listeMathcsAVenir" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Button fx:id="boutonParier" mnemonicParsing="false" onAction="#goParier" prefHeight="60.0" prefWidth="123.0" text="Parier" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

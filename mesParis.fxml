@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mesParisRoot" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MesParis">
+   <top>
+      <Label fx:id="titreMesParis" alignment="CENTER" prefHeight="85.0" prefWidth="365.0" text="Vos Paris Ouverts" textFill="RED" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <ListView fx:id="listeMesParis" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#annulerPari" prefHeight="67.0" prefWidth="142.0" text="Annuler !" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <Label fx:id="erreur" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
